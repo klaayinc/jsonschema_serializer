@@ -23,3 +23,7 @@ gemfiles/vendor/
 gemfiles/*.lock
 spec/dummy/db/development.sqlite3
 spec/dummy/log/
+
+.DS_Store
+spec/dummy/*
+spec/dummy/db/test.sqlite3
