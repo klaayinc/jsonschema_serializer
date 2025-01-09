@@ -4,6 +4,7 @@ require 'bundler/setup'
 require 'json-schema'
 require 'simplecov'
 require 'simplecov-console'
+require "rails"
 
 ENV['RAILS_ENV'] ||= 'test'
 
