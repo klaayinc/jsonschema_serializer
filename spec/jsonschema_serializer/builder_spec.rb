@@ -224,7 +224,7 @@ RSpec.describe JsonschemaSerializer::Builder do
 
     it 'should dump a prettified json by default' do
       # Testing with regex since jruby add more \n
-      expected = /{\n  \"type\": \"object\",\n  \"properties\": {\n+  }\n}/
+      expected = /{\n  \"type\": \"object\",\n  \"properties\": {}\n}/
       expect(instance.to_json).to match(expected)
     end
 

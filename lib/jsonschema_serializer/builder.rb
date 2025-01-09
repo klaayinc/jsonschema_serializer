@@ -90,7 +90,7 @@ module JsonschemaSerializer
     # +title+:: +String+ property title
 
     def boolean(name, **opts)
-      { name => _boolean(opts) }
+      { name => _boolean(**opts) }
     end
 
     # A base representation of the +integer+ type.
@@ -113,7 +113,7 @@ module JsonschemaSerializer
     # +multipleOf+:: +Integer+ property conditional constraint
 
     def integer(name, **opts)
-      { name => _integer(opts) }
+      { name => _integer(**opts) }
     end
 
     # A base representation of the +number+ type.
@@ -136,7 +136,7 @@ module JsonschemaSerializer
     # +multipleOf+:: +Numeric+ property conditional constraint
 
     def number(name, **opts)
-      { name => _number(opts) }
+      { name => _number(**opts) }
     end
 
     # A base representation of the +string+ type.
@@ -157,7 +157,7 @@ module JsonschemaSerializer
     # +minLength+:: +Int+ property minimum length
 
     def string(name, **opts)
-      { name => _string(opts) }
+      { name => _string(**opts) }
     end
 
     # A base representation of the +object+ type.
